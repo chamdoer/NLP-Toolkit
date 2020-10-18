@@ -1,2 +1,4 @@
                     GNU GENERAL PUBLIC LICENSE
-                       Version 2, J
+                       Version 2, June 1991
+
+ Copyright (C)
