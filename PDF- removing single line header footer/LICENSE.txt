@@ -35,3 +35,5 @@ gratis or for a fee, you must give the recipients all the rights that
 you have.  You must make sure that they, too, receive or can get the
 source code.  And you must show them these terms so they know their
 rights.
+
+  We protect your ri
