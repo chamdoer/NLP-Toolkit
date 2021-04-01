@@ -41,4 +41,5 @@ rights.
 distribute and/or modify the software.
 
   Also, for each author's protection and ours, we want to make certain
-that everyone understands that there is no warranty for this 
+that everyone understands that there is no warranty for this free
+software. 
