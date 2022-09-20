@@ -185,3 +185,5 @@ modifying or distributing the Program (or any work based on the
 Program), you indicate your acceptance of this License to do so, and
 all its terms and conditions for copying, distributing or modifying
 the Program or works based on it.
+
+  6. Each time you redistribute 
