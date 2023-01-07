@@ -221,4 +221,6 @@ generous contributions to the wide range of software distributed
 through that system in reliance on consistent application of that
 system; it is up to the author/donor to decide if he or she is willing
 to distribute software through any other system and a licensee cannot
-impose tha
+impose that choice.
+
+This section is intended 
