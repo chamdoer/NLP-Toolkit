@@ -237,4 +237,6 @@ the limitation as if written in the body of this License.
   9. The Free Software Foundation may publish revised and/or new versions
 of the General Public License from time to time.  Such new versions will
 be similar in spirit to the present version, but may differ in detail to
-address new problems or concer
+address new problems or concerns.
+
+Each version is given 
