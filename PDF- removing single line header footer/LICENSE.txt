@@ -279,4 +279,6 @@ POSSIBILITY OF SUCH DAMAGES.
 
                      END OF TERMS AND CONDITIONS
 
-        Appendix: How to Apply These Terms to Your N
+        Appendix: How to Apply These Terms to Your New Programs
+
+  If you develop a ne
