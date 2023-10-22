@@ -22,3 +22,27 @@ import tika
 tika.initVM()
 from tika import parser
 parsed = parser.from_file('/content/brain.pdf', xmlContent=True)   #Input your PDF file here
+content= parsed["content"]
+#print(content)
+
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(content)
+divs = soup.findAll("div", { "class" : "page" })
+
+texts= {}             #stores header and footers
+noOfPages=0
+for div in divs:
+    noOfPages=noOfPages+1
+    inner_text = div.text
+    strings = inner_text.split("\n")
+    for i in range(0,8):  #Considering 1st four non-empty texts of each page (Spaces exists after each text)
+      if(len(strings[i])>1):  #it's a non-empty string
+        #print(strings[i])     #print that non-empty string
+        if(len(texts)==0):    #initial hashmap is empty
+           texts[strings[i]]=1
+           continue
+        f=0                   #flag to check if string found in hashmap
+        for x in texts:
+          if(matcher(x,strings[i])==1): #texts already exist in hashmap
+            texts[x]=texts[x]+1
+            f=1                #setting the flag
