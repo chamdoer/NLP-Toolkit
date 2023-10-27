@@ -46,3 +46,23 @@ for div in divs:
           if(matcher(x,strings[i])==1): #texts already exist in hashmap
             texts[x]=texts[x]+1
             f=1                #setting the flag
+            break
+        if f==0:
+          texts[strings[i]]=1
+
+header_footer=[]
+temp=0
+if noOfPages==1:
+  for x in texts:
+     header_footer.append(x)
+     temp=temp+1
+     if(temp==2):
+       break
+
+elif noOfPages==2:                 #If we have 2 page pdf and 1st page doesn't have header/footer. It'll not work. So we'll paas only 2nd page to algo
+  for x in texts :
+      if(texts[x]==2):             #havent' taken '==1' since do want to take any risk loosing my actual content of pdf
+        header_footer.append(x)
+elif noOfPages==3:
+  for x in texts :
+      if(texts[x]>=2):            
