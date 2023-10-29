@@ -88,3 +88,5 @@ for div in divs:
     
     for x in strings:
       final_text= final_text+"\n"+x
+
+print(final_text)
