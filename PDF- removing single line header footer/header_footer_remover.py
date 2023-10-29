@@ -66,3 +66,25 @@ elif noOfPages==2:                 #If we have 2 page pdf and 1st page doesn't h
 elif noOfPages==3:
   for x in texts :
       if(texts[x]>=2):            
+        header_footer.append(x)
+elif noOfPages>=4:
+ for x in texts :
+    if(texts[x]>=3):
+     #print(x,texts[x])      #print header/footer and their count
+     header_footer.append(x)
+
+#print(header_footer)
+     
+#Delete headers and footers from entire content extracted
+final_text=''
+for div in divs:
+    inner_text = div.text
+    strings = inner_text.split("\n")
+    for i in range(0,8):  #Considering 1st four non-empty texts of each page (Spaces exists after each text)
+      if(len(strings[i])>1):  #it's a non-empty string
+        for hf in header_footer:
+          if(matcher(hf,strings[i])==1): #string extracted is a header or footer
+             strings.remove(strings[i])
+    
+    for x in strings:
+      final_text= final_text+"\n"+x
